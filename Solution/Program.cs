@@ -30,11 +30,9 @@ string[] ArrayInput(int size)
 string[] СreatingNewArray(string[] arr, int letters)
 {
     string[] arrLimit = new string[arr.Length];
-    int j = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i].Length <= letters) arrLimit[j] = arr[i];
-        j++;
+        if (arr[i].Length <= letters) arrLimit[i] = arr[i];
     }
     return arrLimit;
 }
